@@ -1,0 +1,101 @@
+\documentclass{resume}  % Use the custom resume.cls style
+
+\usepackage{cmap}  % поиск в PDF
+\usepackage{mathtext}  % русские буквы в формулах
+\usepackage[T2A]{fontenc}  % кодировка
+\usepackage[utf8]{inputenc}  % кодировка исходного текста
+\usepackage[english,russian]{babel}  % локализация и переносы
+\usepackage{indentfirst}
+\usepackage[left=0.4 in,top=0.4in,right=0.4 in,bottom=0.4in]{geometry}  % Document margins
+\newcommand{\tab}[1]{\hspace{.2667\textwidth}\rlap{#1}} 
+\newcommand{\itab}[1]{\hspace{0em}\rlap{#1}}
+
+%----------------------------------------------------------------------------------------
+% CONTACTS
+%----------------------------------------------------------------------------------------
+
+\name{Владислав Горохов}
+\address{+7(985) 034-0348 \\ Москва, РФ} 
+\address{\href{mailto:gorokhovvd@icloud.com}{gorokhovvd@icloud.com} \\ \href{https://www.linkedin.com/in/vladislav-gorokhov-837a69217}{LinkedIn} \\
+\href{https://github.com/VladOnMyOwn}{GitHub}}
+
+\begin{document}
+
+%----------------------------------------------------------------------------------------
+% SKILLS
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{Навыки}
+   \begin{tabular}{ @{} >{\bfseries}l @{\hspace{6ex}} l }
+      Ключевые    & Машинное обучение, MLOps, Глубинный анализ данных, Временные ряды, Эконометрика,             \\
+                  & Многомерная статистика, Математическая статистика, Prompt engineering, CI/CD, Scrum
+      \\
+      Технические & Python (LightGBM, XGBoost, optuna, scikit-learn, statsmodels, feature-engine, numpy, scipy,  \\
+                  & pandas, asyncio, FastAPI, pydantic, PyTest, loguru, tox, lxml и др.), R, Bash, Git, DVC, S3, \\
+                  & PostgreSQL, MySQL, Docker
+      \\
+      Языки       & Английский - C1
+      \\
+   \end{tabular}\\
+\end{rSection}
+
+%----------------------------------------------------------------------------------------
+% WORK EXPERIENCE
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{Опыт}
+   \textbf{Data Scientist / ML Engineer} \hfill Январь 2023 - Настоящее время\\
+   Zaymigo \hfill \textit{Москва, РФ}
+   \begin{itemize}
+      \itemsep -5pt {}
+      \item Увеличил значение метрики ROI на 2 п.п., снизил долю просрочек FPD30 на 4 п.п. для портфеля первичных клиентов, а также увеличил ROI на 2 п.п., снизил долю FPD30 на 2 п.п. для портфеля повторных клиентов путем разработки и вывода в продуктовую среду новых ML-моделей для системы кредитного скоринга
+      \item Сократил время обнаружения дрейфа данных в 4 раза, разработав систему мониторинга и тестирования качества данных и ML-моделей на основе Evidently AI
+   \end{itemize}
+\end{rSection}
+
+%----------------------------------------------------------------------------------------
+%  EDUCATION
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{Образование}
+   {\bf Прикладная математика и информатика - Бакалавр}, РЭУ им. Г.В. Плеханова \hfill {2019 - 2023}\\
+   Диплом с отличием
+\end{rSection}
+
+\begin{rSection}{Курсы}
+   \begin{itemize}
+      \itemsep -6pt {}
+      \item \href{https://www.udemy.com/certificate/UC-5696cb94-0706-4577-9666-2f3f6b4ace5f/}{Deployment of Machine Learning Models}. Udemy, 2024
+      \item \href{https://jovian.com/certificate/MFQTOOJUGA}{Data Structures and Algorithms in Python}. Jovian, 2022
+      \item \href{https://www.hackerrank.com/certificates/cfb6b0d6f9fa}{SQL Advanced}. HackerRank, 2022
+      \item \href{https://www.datacamp.com/completed/statement-of-accomplishment/course/545c2bf2475d2e684ed8869b624a8af044d56621}{Customer Analytics and A/B Testing in Python}. DataCamp, 2022
+      \item \href{https://www.coursera.org/account/accomplishments/certificate/KXUHDPADQSW7}{Agile Project Management}. Google, Coursera, 2021
+   \end{itemize}
+\end{rSection}
+
+%----------------------------------------------------------------------------------------
+%  HACKATHONS
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{Хакатоны}
+   \begin{itemize}
+      \itemsep -5pt {}
+      \item Хакатон СФО Цифровой прорыв. Сезон: Искусственный интеллект, 2023. 3 место в кейсе \href{https://github.com/orgs/OBeMeHacks/repositories}{"Проанализируй финансовое поведение"}\ от НПФ Будущее. Выступал в роли капитана и наставника команды, DS/MLE
+      \item Международный хакатон Цифровой прорыв. Сезон: Искусственный интеллект, 2023. 11 место в кейсе \href{https://github.com/orgs/obm-hacks/repositories}{"Оценка эффективности вложений в содержание недвижимости"}\ от Банка России. Выступал в роли капитана команды, DS/MLE
+      \item Всероссийский хакатон Цифровой прорыв. Сезон: Искусственный интеллект, 2023. 11 место в кейсе \href{https://github.com/VladOnMyOwn/hacks_ai_dsc}{"Построй свою универсальную рекомендательную систему"}\ от Digital Consulting Solutions. Выступал в роли MLE
+   \end{itemize}
+\end{rSection}
+
+%----------------------------------------------------------------------------------------
+%  ARTICLES AND CONFERENCES
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{Конференции}
+   \begin{itemize}
+      \itemsep -5pt {}
+      \item \href{https://elibrary.ru/ipezcy}{Пуассоновский бутстрэп как метод ускорения статистических тестов на больших данных}, Москва, 2022. Диплом 1-й степени
+      \item \href{https://os-russia.com/SBORNIKI/KON-449-NC.pdf}{Прогнозирование курса Биткоина с применением методов и технологий эконометрического и нейросетевого моделирования}, Таганрог, 2022
+   \end{itemize}
+\end{rSection}
+
+\end{document}
